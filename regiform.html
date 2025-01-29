@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="registartion.html">
+    <style>
+         body{
+            background: black;
+         }
+         div{
+            color: white;
+            width: 300px;
+            border-radius: 10px;
+            margin: auto;
+            padding: 10px;
+            box-shadow: 0 0 3px paleturquoise;
+         }
+         h3{
+            text-align: center;
+            text-decoration: underline;
+         }
+         div:hover{
+            box-shadow: 0 0 15px yellow;
+            background: rgb(24, 30, 30);
+         }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <h3>Student Registration Form</h3>
+        <form action="registration.html" autocomplete="off">
+        <p>
+            <label for="fna">Full Name:</label><span>*</span>
+            <br>
+            <input type="text" id="fna" name="fna" required autofocus>
+        </p>
+        <p>
+            <label for="em">EmailId:</label><span>*</span>
+            <br>
+            <input type="text" id="email" name="em" required>
+        </p>
+        <p>
+            <label for="ph">Contact Number:</label><span>*</span>
+            <br>
+            <input type="number" id="ph" name="ph" min="1000000000" max="9999999999" required>
+        </p>
+        <p>
+            <label for="bob">Date of Birth:</label>
+            <br>
+            <input type="date" id="dob" name="dob" min="1996-01-01" max="2010-12-31">
+        </p>
+        <p>
+            <label for="">Gender:</label><br>
+            <input type="radio" id="g1" name="g" value="f" checked>
+            <label for="g1">Female</label>
+            <br>
+            <input type="radio" id="g2" name="g" value="m" checked>
+            <label for="g2">Male</label>
+        </p>
+        <p>
+            <label for="course">Which Course:</label>
+            <br>
+            <select name="course" id="course">
+            <option value="jfs">Java Full Stack</option>
+            <option value="dnfs">Dot.Net Full Stack</option>
+            <option value="uifs">UI Full Stack</option>
+            <option value="ora">Oracle</option>
+            </select>
+        </p>
+        <p>
+            <label for="mot">Mpde of Traning:</label><br>
+            <select name="mot" id="">
+                <option value="ot">Online Traning</option>
+                <option value="ot">Placement Traning</option>
+                <option value="ot">Project Traning</option>
+            </select>
+        </p>
+        <p align="center">
+         <input type="checkbox" id="tc" name="tc" value="true" required><label for="tc">I Accepted All Terms &  Conditions</label>
+         <br>
+         
+        </p>
+        <p align="center">
+          <button>Enroll Now</button>
+        </p>
+        </form>
+    </div>
+</body>
+</html>
