@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Button Types Example</title>
+    <style>
+        /* Basic button styling */
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .primary {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .secondary {
+            background-color: #008CBA;
+            color: white;
+        }
+
+        .danger {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .warning {
+            background-color: #ff9800;
+            color: white;
+        }
+
+        .success {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .disabled {
+            background-color: #d3d3d3;
+            color: #a9a9a9;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>All Button Types Example</h2>
+
+    <!-- Standard button -->
+    <button onclick="alert('Standard button clicked!')">Standard Button</button>
+
+    <!-- Primary button -->
+    <button class="primary" onclick="alert('Primary button clicked!')">Primary Button</button>
+
+    <!-- Secondary button -->
+    <button class="secondary" onclick="alert('Secondary button clicked!')">Secondary Button</button>
+
+    <!-- Danger button -->
+    <button class="danger" onclick="alert('Danger button clicked!')">Danger Button</button>
+
+    <!-- Warning button -->
+    <button class="warning" onclick="alert('Warning button clicked!')">Warning Button</button>
+
+    <!-- Success button -->
+    <button class="success" onclick="alert('Success button clicked!')">Success Button</button>
+
+    <!-- Disabled button -->
+    <button class="disabled" disabled>Disabled Button</button>
+
+    <!-- Submit button -->
+    <form action="#">
+        <button type="submit">Submit Button</button>
+    </form>
+
+    <!-- Reset button -->
+    <form action="#">
+        <button type="reset">Reset Button</button>
+    </form>
+
+    <!-- Button with link -->
+    <a href="https://www.example.com">
+        <button>Link Button</button>
+    </a>
+
+</body>
+</html>
